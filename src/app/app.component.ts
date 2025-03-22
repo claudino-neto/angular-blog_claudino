@@ -3,12 +3,15 @@ import { RouterOutlet } from '@angular/router';
 import { SmallCardComponent } from "./components/small-card/small-card.component";
 import { MenuTitleComponent } from "./components/menu-title/menu-title.component";
 import { HomeComponent } from "./pages/home/home.component";
+import { MenuBarComponent } from "./components/menu-bar/menu-bar.component";
+import { ContentComponent } from './pages/content/content.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SmallCardComponent, MenuTitleComponent, HomeComponent],
+  standalone: true, // Adicionando Standalone
+  imports: [RouterOutlet, SmallCardComponent, MenuTitleComponent, HomeComponent, MenuBarComponent, ContentComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corrigindo o nome da propriedade
 })
 export class AppComponent {
   title = 'angular-blog_claudino';
