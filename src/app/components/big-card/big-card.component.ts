@@ -15,6 +15,6 @@ export class BigCardComponent {
   @Input()
   cardDescription:string =""
   @Input()
-   Id:string="0"
+  Id:string="0"
   
 }
